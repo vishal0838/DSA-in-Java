@@ -1,10 +1,11 @@
 
 import java.util.Deque;
 import java.util.LinkedList;
+import java.util.Queue;
 
 class QueueImp {
 
-    public class Stack {
+    public static class Queue {
         Deque<Integer> d = new LinkedList<>(); 
         
         public void push(int data) {
@@ -20,6 +21,15 @@ class QueueImp {
         }
     }
     public static void main(String[] args) {
-        
+        Queue q = new Queue(); 
+
+        q.add(1); 
+        q.add(2); 
+        q.add(3);
+
+        System.out.println("peek: " + q.peek());
+        System.out.println(q.pop()); 
+
+
     }
 }
