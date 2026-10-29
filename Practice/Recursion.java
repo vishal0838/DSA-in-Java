@@ -16,9 +16,12 @@ class Recursion {
     }
 
     public static int fib(int n ) {
+        int step = 0; 
         if (n == 0 || n == 1) {
             return n; 
         }
+        step++; 
+        System.err.println("Step: " + step);
         return fib(n - 2) + fib(n - 1); 
 
     }
@@ -52,6 +55,6 @@ class Recursion {
 
         int arr[] = {1, 2, 3, 7, 5}; 
 
-        System.out.println(occur(arr, 0, 8));
+        System.out.println(fib(n));
     }
 }
